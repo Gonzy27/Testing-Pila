@@ -4,16 +4,22 @@ import java.util.*;
 
 public class Pila {
 	
-	private Pila arrayStack[];
-
+	private Object arrayStack[];
+	private int topStack;
+	private static int capacityStack;
+	
 	public Pila(){
-		 arrayStack = new Pila[0];
+		 topStack = -1;
+		 capacityStack = 100;
+		 arrayStack = new Object[capacityStack];
 	}
 	
 	public int sizeOfStack(){
-		int cantidad;
-		cantidad = arrayStack.length;
-		return cantidad;
+		return topStack;
 	}
 	
+	public void add(int i){
+		topStack++;
+		arrayStack[topStack] = i;
+	}
 }

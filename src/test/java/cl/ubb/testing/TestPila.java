@@ -10,7 +10,14 @@ public class TestPila {
 	public void stackIsEmpty(){
 		Pila pila = new Pila();
 		int result = pila.sizeOfStack();
+		assertEquals(-1, result);
+	}
+	
+	@Test
+	public void addThreeSoStackIsNotEmpty(){
+		Pila pila = new Pila();
+		pila.add(3);
+		int result = pila.sizeOfStack();
 		assertEquals(0, result);
 	}
-
 }
