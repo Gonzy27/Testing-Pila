@@ -22,7 +22,7 @@ public class Pila {
 	}
 	
 	public int sizeOfStack(){
-		return topStack;
+		return topStack+1;
 	}
 	
 	public void add(int i){
