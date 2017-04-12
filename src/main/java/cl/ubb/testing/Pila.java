@@ -14,6 +14,13 @@ public class Pila {
 		 arrayStack = new Object[capacityStack];
 	}
 	
+	public boolean stackIsEmpty(){
+		if(topStack == -1){
+			return true;
+		}
+		return false;
+	}
+	
 	public int sizeOfStack(){
 		return topStack;
 	}

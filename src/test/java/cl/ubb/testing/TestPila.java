@@ -9,15 +9,24 @@ public class TestPila {
 	@Test
 	public void stackIsEmpty(){
 		Pila pila = new Pila();
-		int result = pila.sizeOfStack();
-		assertEquals(-1, result);
+		boolean result = pila.stackIsEmpty();
+		assertEquals(true, result);
 	}
 	
 	@Test
 	public void addThreeSoStackIsNotEmpty(){
 		Pila pila = new Pila();
 		pila.add(3);
-		int result = pila.sizeOfStack();
-		assertEquals(0, result);
+		boolean result = pila.stackIsEmpty();
+		assertEquals(false, result);
+	}
+	
+	@Test
+	public void addOneAndTwoSoStackIsNotEmpty(){
+		Pila pila = new Pila();
+		pila.add(1);
+		pila.add(2);
+		boolean result = pila.stackIsEmpty();
+		assertEquals(false, result);
 	}
 }
