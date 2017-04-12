@@ -55,6 +55,7 @@ public class TestPila {
 		pila.add(9);
 		int result = pila.pop();
 		assertEquals(9, result);
+		result = pila.pop();
 		assertEquals(8, result);
 	}
 }
