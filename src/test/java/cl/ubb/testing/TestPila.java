@@ -7,8 +7,10 @@ import org.junit.Test;
 public class TestPila {
 
 	@Test
-	public void test() {
-		fail("Not yet implemented");
+	public void stackIsEmpty(){
+		Pila pila = new Pila();
+		int result = pila.sizeOfStack();
+		assertEquals(0, result);
 	}
 
 }
