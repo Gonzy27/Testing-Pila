@@ -38,4 +38,23 @@ public class TestPila {
 		int result = pila.sizeOfStack();
 		assertEquals(2, result);
 	}
+	
+	@Test
+	public void addSixAndSevenToPopAndGetSeven(){
+		Pila pila = new Pila();
+		pila.add(6);
+		pila.add(7);
+		int result = pila.pop();
+		assertEquals(7, result);
+	}
+	
+	@Test
+	public void addEightAndNineToPopAndGetNineAndEight(){
+		Pila pila = new Pila();
+		pila.add(8);
+		pila.add(9);
+		int result = pila.pop();
+		assertEquals(9, result);
+		assertEquals(8, result);
+	}
 }
